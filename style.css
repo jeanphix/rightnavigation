@@ -1,0 +1,71 @@
+body{
+    background: #f1f1f1;
+    font-size: 14px;
+}
+body > section{
+    background: #fff;
+}
+header,
+body > section,
+footer{
+    padding: 0 5%;
+}
+.notice{
+    padding: 0.5em 1em;
+    border: 1px #058706 solid;
+    background: #A8FFA8;
+    color: #058706;
+    border-radius: 0.5em;
+}
+/* Header */
+header{
+    background: #222;
+    line-height: 4em;
+    color: #eee;
+}
+header > h1{
+    margin: 0;
+    font-size: 100%;
+}
+/* Breadcrumbs */
+nav[role=breadcrumbs]{
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0 0 0 5%;
+    border-bottom: 1px solid #D2D2D2;
+}
+nav[role=breadcrumbs] > ul{
+    padding: 0;
+    margin: 0;
+    line-height: 2em;
+}
+nav[role=breadcrumbs] > ul > li{
+    display: inline-block;
+}
+nav[role=breadcrumbs] > ul > li:not(:last-child):after{
+    content: ">";
+    margin: 0 0 0 0.5em;
+}
+/* Content */
+body > section{
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+    border-bottom: 1px solid #D2D2D2;
+}
+body > section > div{
+    margin-right: 300px;
+}
+body > section > div > h1{
+    margin: 0;
+    font-size: 110%;
+}
+/* Navigation */
+nav[role=navigation]{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    padding-top: 1em;
+    width: 250px;
+}
